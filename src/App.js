@@ -3,13 +3,15 @@ import React from 'react';
 // import './App.css';
 
 function App() {
+  // const greeting = "Hi, Tom!";
+  // const dom = <h1 className="fooa">{greeting}</h1>;
   return (
-    <div>
-        <p>
-          Hello-world
-        </p>
-    </div>
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onChange={() => {console.log("I am clicked")}}/>
+      </React.Fragment>
   );
 }
+
 
 export default App;
